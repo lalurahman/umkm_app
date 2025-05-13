@@ -125,7 +125,7 @@
                             <div class="logos">
                                 <img
                                     src="{{ asset('assets/img/logo.jpg') }}"
-                                    alt="Logo Kaka Dokter"
+                                    alt="Logo Mamuju"
                                 >
                             </div>
                         </div>
