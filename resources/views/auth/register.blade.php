@@ -107,6 +107,20 @@
             width: 100px;
         }
     </style>
+
+    <!-- PWA  -->
+    <meta
+        name="theme-color"
+        content="#2596be"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="{{ asset('logo.jpg') }}"
+    >
+    <link
+        rel="manifest"
+        href="{{ asset('manifest.json') }}"
+    >
 </head>
 
 <body style="background-color: #2596be">
@@ -387,6 +401,23 @@
                 icon: 'error',
             });
         @endif
+    </script>
+    <script src="{{ asset('sw.js') }}"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            // Register a service worker hosted at the root of the
+            // site using the default scope.
+            navigator.serviceWorker.register("/sw.js").then(
+                (registration) => {
+                    console.log("Service worker registration succeeded:", registration);
+                },
+                (error) => {
+                    console.error(`Service worker registration failed: ${error}`);
+                },
+            );
+        } else {
+            console.error("Service workers are not supported.");
+        }
     </script>
 </body>
 

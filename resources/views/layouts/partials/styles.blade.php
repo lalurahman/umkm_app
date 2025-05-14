@@ -93,3 +93,17 @@
 <!-- Helpers -->
 <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
 <script src="{{ asset('assets/js/config.js') }}"></script>
+
+<!-- PWA  -->
+<meta
+    name="theme-color"
+    content="#2596be"
+/>
+<link
+    rel="apple-touch-icon"
+    href="{{ asset('logo.jpg') }}"
+>
+<link
+    rel="manifest"
+    href="{{ asset('manifest.json') }}"
+>
