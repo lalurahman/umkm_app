@@ -30,28 +30,21 @@
                 href="#"
             ><i class="icofont-food-cart"></i>pasar</a>
             <ul class="dropdown-list">
-                <li><a href="#">shop 5 column</a></li>
+                @foreach ($market as $item)
+                    <li><a href="#">{{ $item->name }}</a></li>
+                @endforeach
+            </ul>
+        </li>
+        <li>
+            <a
+                class="nav-link dropdown-link"
+                href="#"
+            ><i class="icofont-food-cart"></i>kategori usaha</a>
+            <ul class="dropdown-list">
+                @foreach ($categories as $item)
+                    <li><a href="#">{{ $item->name }}</a></li>
+                @endforeach
             </ul>
         </li>
     </ul>
-    <div class="nav-info-group">
-        <div class="nav-info">
-            <i class="icofont-ui-touch-phone"></i>
-            <p>
-                <small>call us</small>
-                <span>(+880) 183 8288 389</span>
-            </p>
-        </div>
-        <div class="nav-info">
-            <i class="icofont-ui-email"></i>
-            <p>
-                <small>email us</small>
-                <span>support@greeny.com</span>
-            </p>
-        </div>
-    </div>
-    <div class="nav-footer">
-        <p>All Rights Reserved by <a href="#">UMKM Mamuju</a></p>
-    </div>
-    </div>
 </aside>

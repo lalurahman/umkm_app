@@ -16,7 +16,20 @@
                                 href="#"
                             >pasar</a>
                             <ul class="dropdown-position-list">
-                                <li><a href="#">pasar 1</a></li>
+                                @foreach ($market as $item)
+                                    <li><a href="#">{{ $item->name }}</a></li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        <li class="navbar-item dropdown">
+                            <a
+                                class="navbar-link dropdown-arrow"
+                                href="#"
+                            >kategori usaha</a>
+                            <ul class="dropdown-position-list">
+                                @foreach ($categories as $item)
+                                    <li><a href="#">{{ $item->name }}</a></li>
+                                @endforeach
                             </ul>
                         </li>
                     </ul>
