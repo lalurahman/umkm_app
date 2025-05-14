@@ -28,7 +28,7 @@
 
     <ul class="menu-inner py-1 pt-5">
         <!-- Dashboards -->
-        <li class="menu-item @if (request()->is('admin')) active open @endif">
+        <li class="menu-item @if (request()->is('administrator')) active open @endif">
             <a
                 href="{{ route('admin.dashboard') }}"
                 class="menu-link"
@@ -42,7 +42,7 @@
         <li class="menu-header small">
             <span class="menu-header-text">Admin</span>
         </li>
-        <li class="menu-item @if (request()->is('admin/market*')) active open @endif">
+        <li class="menu-item @if (request()->is('administrator/market*')) active open @endif">
             <a
                 href="{{ route('admin.market.index') }}"
                 class="menu-link"
@@ -51,7 +51,7 @@
                 <div>Data Pasar</div>
             </a>
         </li>
-        <li class="menu-item @if (request()->is('admin/store-categories*')) active open @endif">
+        <li class="menu-item @if (request()->is('administrator/store-categories*')) active open @endif">
             <a
                 href="{{ route('admin.store-categories.index') }}"
                 class="menu-link"
@@ -60,7 +60,7 @@
                 <div>Data Kategori Usaha</div>
             </a>
         </li>
-        <li class="menu-item @if (request()->is('admin/stores*')) active open @endif">
+        <li class="menu-item @if (request()->is('administrator/stores*')) active open @endif">
             <a
                 href="{{ route('admin.stores.index') }}"
                 class="menu-link"
