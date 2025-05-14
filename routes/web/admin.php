@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\StoreController;
 use App\Http\Controllers\Admin\StoreUserController;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('admin')
+Route::prefix('administrator')
     ->name('admin.')
     ->middleware(['auth', 'verified', 'admin'])
     ->group(function () {
