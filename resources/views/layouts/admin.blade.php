@@ -21,6 +21,20 @@
         @yield('title')
     </title>
 
+    <!-- PWA  -->
+    <meta
+        name="theme-color"
+        content="#2596be"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="{{ asset('logo.jpg') }}"
+    >
+    <link
+        rel="manifest"
+        href="{{ asset('manifest.json') }}"
+    >
+
     @include('layouts.partials.styles')
     @stack('styles')
 </head>

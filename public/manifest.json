@@ -1,0 +1,17 @@
+{
+    "name": "UMKM APP MAMUJU",
+    "short_name": "LPT",
+    "start_url": "/index.php",
+    "background_color": "#2596be",
+    "description": "Pasar UMKM Mamuju",
+    "display": "fullscreen",
+    "theme_color": "#2596be",
+    "icons": [
+        {
+            "src": "logo.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
