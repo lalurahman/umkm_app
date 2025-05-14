@@ -27,7 +27,7 @@
 {{-- <link
     rel="icon"
     type="image/x-icon"
-    href="{{ asset('assets/img/logo-sm.png') }}"
+    href="{{ asset('admin/img/logo-sm.png') }}"
 /> --}}
 <!-- Fonts -->
 <link
@@ -46,21 +46,21 @@
 
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/fonts/iconify-icons.css') }}"
+    href="{{ asset('admin/vendor/fonts/iconify-icons.css') }}"
 />
 
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/libs/pickr/pickr-themes.css') }}"
+    href="{{ asset('admin/vendor/libs/pickr/pickr-themes.css') }}"
 />
 
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/css/core.css') }}"
+    href="{{ asset('admin/vendor/css/core.css') }}"
 />
 <link
     rel="stylesheet"
-    href="{{ asset('assets/css/demo.css') }}"
+    href="{{ asset('admin/css/demo.css') }}"
 />
 
 
@@ -68,22 +68,22 @@
 
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}"
+    href="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}"
 />
 
 <!-- endbuild -->
 
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/fonts/flag-icons.css') }}"
+    href="{{ asset('admin/vendor/fonts/flag-icons.css') }}"
 />
 <link
     rel="stylesheet"
-    href="{{ asset('assets/vendor/libs/apex-charts/apex-charts.css') }}"
+    href="{{ asset('admin/vendor/libs/apex-charts/apex-charts.css') }}"
 />
 
 <!-- Page CSS -->
-{{-- <script src="{{ asset('assets/vendor/js/template-customizer.js') }}"></script> --}}
+{{-- <script src="{{ asset('admin/vendor/js/template-customizer.js') }}"></script> --}}
 
 <style>
     #template-customizer .template-customizer-open-btn {
@@ -91,8 +91,8 @@
     }
 </style>
 <!-- Helpers -->
-<script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
-<script src="{{ asset('assets/js/config.js') }}"></script>
+<script src="{{ asset('admin/vendor/js/helpers.js') }}"></script>
+<script src="{{ asset('admin/js/config.js') }}"></script>
 
 <!-- PWA  -->
 <meta

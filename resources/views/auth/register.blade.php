@@ -4,7 +4,7 @@
     class=" layout-wide  customizer-hide"
     dir="ltr"
     data-skin="default"
-    data-assets-path="assets/"
+    data-assets-path="admin/"
     data-template="vertical-menu-template"
     data-bs-theme="light"
 >
@@ -23,7 +23,7 @@
     <link
         rel="icon"
         type="image/x-icon"
-        href="{{ asset('assets/img/logo.jpg') }}"
+        href="{{ asset('admin/img/logo.jpg') }}"
     />
 
     <!-- Fonts -->
@@ -43,25 +43,25 @@
 
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/fonts/iconify-icons.css') }}"
+        href="{{ asset('admin/vendor/fonts/iconify-icons.css') }}"
     />
 
     <!-- Core CSS -->
-    <!-- build:css assets/vendor/css/theme.css  -->
+    <!-- build:css admin/vendor/css/theme.css  -->
 
 
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/libs/pickr/pickr-themes.css') }}"
+        href="{{ asset('admin/vendor/libs/pickr/pickr-themes.css') }}"
     />
 
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/css/core.css') }}"
+        href="{{ asset('admin/vendor/css/core.css') }}"
     />
     <link
         rel="stylesheet"
-        href="{{ asset('assets/css/demo.css') }}"
+        href="{{ asset('admin/css/demo.css') }}"
     />
 
 
@@ -69,7 +69,7 @@
 
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}"
+        href="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}"
     />
 
     <!-- endbuild -->
@@ -77,22 +77,22 @@
     <!-- Vendor -->
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/libs/%40form-validation/form-validation.css') }}"
+        href="{{ asset('admin/vendor/libs/%40form-validation/form-validation.css') }}"
     />
 
     <!-- Page CSS -->
     <!-- Page -->
     <link
         rel="stylesheet"
-        href="{{ asset('assets/vendor/css/pages/page-auth.css') }}"
+        href="{{ asset('admin/vendor/css/pages/page-auth.css') }}"
     />
 
     <!-- Helpers -->
-    <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vendor/js/template-customizer.js') }}"></script> --}}
+    <script src="{{ asset('admin/vendor/js/helpers.js') }}"></script>
+    {{-- <script src="{{ asset('admin/vendor/js/template-customizer.js') }}"></script> --}}
 
 
-    <script src="{{ asset('assets/js/config.js') }}"></script>
+    <script src="{{ asset('admin/js/config.js') }}"></script>
     <style>
         .logos {
             display: flex;
@@ -138,7 +138,7 @@
                         <div class="app-brand justify-content-center">
                             <div class="logos">
                                 <img
-                                    src="{{ asset('assets/img/logo.jpg') }}"
+                                    src="{{ asset('admin/img/logo.jpg') }}"
                                     alt="Logo Mamuju"
                                 >
                             </div>
@@ -352,45 +352,45 @@
 
 
     <!-- Core JS -->
-    <!-- build:js assets/vendor/js/theme.js  -->
+    <!-- build:js admin/vendor/js/theme.js  -->
 
 
-    <script src="{{ asset('assets/vendor/libs/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/jquery/jquery.js') }}"></script>
 
-    <script src="{{ asset('assets/vendor/libs/popper/popper.js') }}"></script>
-    <script src="{{ asset('assets/vendor/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('assets/vendor/libs/%40algolia/autocomplete-js.js') }}"></script>
-
-
-
-    <script src="{{ asset('assets/vendor/libs/pickr/pickr.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/popper/popper.js') }}"></script>
+    <script src="{{ asset('admin/vendor/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/%40algolia/autocomplete-js.js') }}"></script>
 
 
 
-    <script src="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/pickr/pickr.js') }}"></script>
 
 
-    <script src="{{ asset('assets/vendor/libs/hammer/hammer.js') }}"></script>
 
-    <script src="{{ asset('assets/vendor/libs/i18n/i18n.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 
 
-    <script src="{{ asset('assets/vendor/js/menu.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/hammer/hammer.js') }}"></script>
+
+    <script src="{{ asset('admin/vendor/libs/i18n/i18n.js') }}"></script>
+
+
+    <script src="{{ asset('admin/vendor/js/menu.js') }}"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="{{ asset('assets/vendor/libs/%40form-validation/popular.js') }}"></script>
-    <script src="{{ asset('assets/vendor/libs/%40form-validation/bootstrap5.js') }}"></script>
-    <script src="{{ asset('assets/vendor/libs/%40form-validation/auto-focus.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/%40form-validation/popular.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/%40form-validation/bootstrap5.js') }}"></script>
+    <script src="{{ asset('admin/vendor/libs/%40form-validation/auto-focus.js') }}"></script>
 
     <!-- Main JS -->
 
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('admin/js/main.js') }}"></script>
 
 
     <!-- Page JS -->
-    <script src="{{ asset('assets/js/pages-auth.js') }}"></script>
+    <script src="{{ asset('admin/js/pages-auth.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"></script>
 
     <script>

@@ -109,7 +109,7 @@
 
 @push('scripts')
     {{ $dataTable->scripts() }}
-    <script src="{{ asset('assets/datatables/datatables-bootstrap5.js') }}"></script>
+    <script src="{{ asset('admin/datatables/datatables-bootstrap5.js') }}"></script>
     <script>
         $(document).ready(function() {
             const datatable = $('#productcategory-table');

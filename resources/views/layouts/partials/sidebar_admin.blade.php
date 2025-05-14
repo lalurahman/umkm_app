@@ -10,7 +10,7 @@
         >
             <span class="app-brand-text demo menu-text fw-bold ms-2">
                 <img
-                    src="{{ asset('assets/img/logo.jpg') }}"
+                    src="{{ asset('admin/img/logo.jpg') }}"
                     width="50"
                 >
             </span>

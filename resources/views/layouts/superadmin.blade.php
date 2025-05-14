@@ -4,7 +4,7 @@
     class="layout-navbar-fixed layout-menu-fixed layout-compact "
     dir="ltr"
     data-skin="default"
-    data-assets-path="assets/"
+    data-assets-path="admin/"
     data-template="vertical-menu-template"
     data-bs-theme="light"
     data-semidark-menu="false"
@@ -81,7 +81,7 @@
     <!-- / Layout wrapper -->
 
     <!-- Core JS -->
-    <!-- build:js assets/vendor/js/theme.js  -->
+    <!-- build:js admin/vendor/js/theme.js  -->
     @stack('modal')
     @include('layouts.partials.scripts')
     @stack('scripts')
