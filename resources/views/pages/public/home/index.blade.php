@@ -29,11 +29,11 @@
                 <div class="col-lg-12 order-0 order-lg-1 order-xl-1">
                     <div class="home-grid-slider slider-arrow slider-dots">
                         <a href="#"><img
-                                src="{{ asset('assets/images/home/grid/01.jpg') }}"
+                                src="{{ asset('assets/images/banner1.png') }}"
                                 alt=""
                             ></a>
                         <a href="#"><img
-                                src="{{ asset('assets/images/home/grid/02.jpg') }}"
+                                src="{{ asset('assets/images/banner1.png') }}"
                                 alt=""
                             ></a>
                     </div>
@@ -60,7 +60,7 @@
                                     href="#"
                                 >
                                     <img
-                                        src="{{ asset('assets/images/product/01.jpg') }}"
+                                        src="{{ asset('assets/images/store.png') }}"
                                         alt="product"
                                     >
                                 </a>
