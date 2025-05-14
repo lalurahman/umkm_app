@@ -40,6 +40,7 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'store_category_id' => ['required', 'exists:store_categories,id'],
+            'market_id' => ['required', 'exists:markets,id'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', Rules\Password::defaults()],
         ]);
@@ -47,6 +48,7 @@ class RegisteredUserController extends Controller
         $store = Store::create([
             'name' => $request->store_name,
             'store_category_id' => $request->store_category_id,
+            'market_id' => $request->market_id,
             'phone' => $request->store_phone,
             'address' => $request->store_address,
             'slug' => str()->slug($request->store_name),
