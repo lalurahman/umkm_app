@@ -32,6 +32,12 @@
                                 @endforeach
                             </ul>
                         </li>
+                        <li class="navbar-item">
+                            <a
+                                class="navbar-link"
+                                href="{{ route('store.index') }}"
+                            >usaha</a>
+                        </li>
                     </ul>
                 </div>
             </div>

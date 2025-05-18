@@ -87,7 +87,7 @@
                 <div class="col-lg-12">
                     <div class="section-btn-25">
                         <a
-                            href="#"
+                            href="{{ route('store.index') }}"
                             class="btn btn-outline"
                         >
                             <i class="fas fa-eye"></i>
