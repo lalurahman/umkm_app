@@ -58,13 +58,15 @@
                                         <span>{{ $item->market?->name }}</span>
                                     </h6>
                                     <div class="row">
-                                        <a
-                                            href="{{ route('store.show', $item->slug) }}"
-                                            class="product-add"
-                                            title="Add to Cart"
-                                        >
-                                            <span>Lihat Detail</span>
-                                        </a>
+                                        <div class="col-12">
+                                            <div class="product-add">
+                                                <i class="fas fa-eye"></i>
+                                                <a
+                                                    href="{{ route('store.show', $item->slug) }}"
+                                                    class="text-dark"
+                                                >Lihat Detail</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

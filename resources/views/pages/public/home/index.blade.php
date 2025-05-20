@@ -67,17 +67,22 @@
                             </div>
                             <div class="product-content">
                                 <h6 class="product-name">
-                                    <a href="#">{{ $item->name }}</a>
+                                    <a href="{{ route('store.show', $item->slug) }}">{{ $item->name }}</a>
                                 </h6>
                                 <h6 class="product-price">
                                     <span>{{ $item->market?->name }}</span>
                                 </h6>
-                                <button
-                                    class="product-add"
-                                    title="Add to Cart"
-                                >
-                                    <span>Lihat Detail</span>
-                                </button>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="product-add">
+                                            <i class="fas fa-eye"></i>
+                                            <a
+                                                href="{{ route('store.show', $item->slug) }}"
+                                                class="text-dark"
+                                            >Lihat Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
