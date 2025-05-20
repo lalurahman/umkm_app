@@ -53,7 +53,7 @@ class ProductController extends Controller
             ]);
             // save to database 
             $data['slug'] = str()->slug($request->name);
-            $data['store_id'] = Auth::user()->store?->id;
+            $data['store_id'] = Auth::user()->store_id;
             if ($request->hasFile('image')) {
                 $file = $request->file('image');
                 $filename = time() . '.' . str_replace(' ', '-', strtolower($file->getClientOriginalName()));
