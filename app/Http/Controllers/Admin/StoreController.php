@@ -123,6 +123,9 @@ class StoreController extends Controller
             if ($store->productCategories()->count() > 0) {
                 return Response::error(NULL, 'Usaha tidak dapat dihapus karena memiliki kategori produk', 400);
             }
+            if ($store->user()->count() > 0) {
+                return Response::error(NULL, 'Usaha tidak dapat dihapus karena memiliki pengguna', 400);
+            }
             // delete from database 
             $store->delete();
             // add log activity
