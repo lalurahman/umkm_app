@@ -35,7 +35,7 @@
                                 <div class="product-media">
                                     <a
                                         class="product-image"
-                                        href="#"
+                                        href="{{ route('store.product_detail', $item->slug) }}"
                                     >
                                         <img
                                             src="{{ asset('product/' . $item->image) }}"
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="product-content">
                                     <h6 class="product-name">
-                                        <a href="#">{{ $item->name }}</a>
+                                        <a href="{{ route('store.product_detail', $item->slug) }}">{{ $item->name }}</a>
                                     </h6>
                                     <h6 class="product-price">
                                         <span>Rp. {{ number_format($item->price) }}<small>
@@ -57,7 +57,7 @@
                                             <div class="product-add">
                                                 <i class="fas fa-eye"></i>
                                                 <a
-                                                    href="#"
+                                                    href="{{ route('store.product_detail', $item->slug) }}"
                                                     class="text-dark"
                                                 >Lihat Detail</a>
                                             </div>

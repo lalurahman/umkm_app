@@ -11,7 +11,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::prefix('stores')->name('store.')->group(function () {
     Route::get('/', [StoreController::class, 'index'])->name('index');
     Route::get('/{slug}', [StoreController::class, 'show'])->name('show');
-    // Route::get('/{slug}/products', [StoreController::class, 'products'])->name('products');
+    Route::get('/product/{slug}', [StoreController::class, 'productDetail'])->name('product_detail');
 });
 
 // Route::get('/dashboard', function () {

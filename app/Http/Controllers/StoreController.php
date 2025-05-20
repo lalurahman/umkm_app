@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Store;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class StoreController extends Controller
 {
@@ -22,6 +24,16 @@ class StoreController extends Controller
         return view('pages.public.store.show', compact([
             'store',
             'products',
+        ]));
+    }
+
+    public function productDetail($slug)
+    {
+        $auth = Auth::user();
+        $product = Product::where('slug', $slug)->firstOrFail();
+        return view('pages.public.store.product_detail', compact([
+            'product',
+            'auth',
         ]));
     }
 }
