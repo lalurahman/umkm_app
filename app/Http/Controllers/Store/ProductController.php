@@ -16,7 +16,7 @@ class ProductController extends Controller
     public function index(ProductDataTable $dataTable)
     {
         $auth = Auth::user();
-        $productCategories = ProductCategory::where('store_id', $auth->store->id)->get();
+        $productCategories = ProductCategory::where('store_id', $auth->store_id)->get();
         return $dataTable->render('pages.store.product.index', compact([
             'productCategories',
         ]));
