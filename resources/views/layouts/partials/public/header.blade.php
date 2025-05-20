@@ -22,17 +22,31 @@
                     alt="logo"
                 >
             </a>
-            <a
-                href="{{ route('login') }}"
-                class="header-widget"
-                title="My Account"
-            >
-                <img
-                    src="{{ asset('assets/images/user.png') }}"
-                    alt="user"
+            @if (Auth::check())
+                <a
+                    href="{{ route('store.dashboard') }}"
+                    class="header-widget"
+                    title="My Account"
                 >
-                <span>Masuk</span>
-            </a>
+                    <img
+                        src="{{ asset('assets/images/user.png') }}"
+                        alt="user"
+                    >
+                    <span>Dashboard</span>
+                </a>
+            @else
+                <a
+                    href="{{ route('login') }}"
+                    class="header-widget"
+                    title="My Account"
+                >
+                    <img
+                        src="{{ asset('assets/images/user.png') }}"
+                        alt="user"
+                    >
+                    <span>Masuk</span>
+                </a>
+            @endif
 
             <form class="header-form">
                 <input

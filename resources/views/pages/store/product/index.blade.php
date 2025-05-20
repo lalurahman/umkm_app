@@ -52,7 +52,7 @@
         aria-hidden="true"
     >
         <div
-            class="modal-dialog"
+            class="modal-dialog modal-lg"
             role="document"
         >
             <div class="modal-content">
@@ -69,14 +69,14 @@
                     ></button>
                 </div>
                 <form
-                    action="#"
+                    action="{{ route('store.products.store') }}"
                     method="post"
                     enctype="multipart/form-data"
                 >
                     @csrf
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-12 mb-6">
+                            <div class="col-12 col-md-6 mb-6">
                                 <label class="form-label">
                                     Kategori Produk
                                 </label>
@@ -94,7 +94,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-12 mb-6">
+                            <div class="col-12 col-md-6 mb-6">
                                 <label class="form-label">
                                     Nama Produk
                                 </label>
@@ -102,7 +102,56 @@
                                     type="text"
                                     name="name"
                                     class="form-control"
-                                    placeholder="Masukkan Nama Produk"
+                                    placeholder="Nama Produk"
+                                    required
+                                >
+                            </div>
+                            <div class="col-12 col-md-6 mb-6">
+                                <label class="form-label">
+                                    Harga Produk
+                                </label>
+                                <input
+                                    type="number"
+                                    name="price"
+                                    class="form-control"
+                                    placeholder="Harga Produk"
+                                    required
+                                >
+                            </div>
+                            <div class="col-12 col-md-6 mb-6">
+                                <label class="form-label">
+                                    Jumlah Stok
+                                </label>
+                                <input
+                                    type="number"
+                                    name="stock"
+                                    class="form-control"
+                                    placeholder="Stok Produk"
+                                    required
+                                >
+                            </div>
+                            <div class="col-12 mb-6">
+                                <label class="form-label">
+                                    Deskripsi Produk
+                                </label>
+                                <textarea
+                                    name="description"
+                                    id=""
+                                    rows="5"
+                                    class="form-control"
+                                >
+                                    
+                                </textarea>
+                            </div>
+                            <div class="col-12 mb-6">
+                                <label class="form-label">
+                                    Gambar Produk
+                                </label>
+                                <input
+                                    type="file"
+                                    name="image"
+                                    class="form-control"
+                                    accept="image/*"
                                     required
                                 >
                             </div>

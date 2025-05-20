@@ -35,18 +35,17 @@
                                 <div class="product-media">
                                     <a
                                         class="product-image"
-                                        href="{{ route('product.show', ['id' => $item->id, 'slug' => $item->slug]) }}"
+                                        href="#"
                                     >
                                         <img
-                                            src="{{ asset('file/product/image/' . $item->image) }}"
+                                            src="{{ asset('product/' . $item->image) }}"
                                             alt="product"
                                         >
                                     </a>
                                 </div>
                                 <div class="product-content">
                                     <h6 class="product-name">
-                                        <a
-                                            href="{{ route('product.show', ['id' => $item->id, 'slug' => $item->slug]) }}">{{ $item->name }}</a>
+                                        <a href="#">{{ $item->name }}</a>
                                     </h6>
                                     <h6 class="product-price">
                                         <span>Rp. {{ number_format($item->price) }}<small>
@@ -58,7 +57,7 @@
                                             <div class="product-add">
                                                 <i class="fas fa-eye"></i>
                                                 <a
-                                                    href="{{ route('product.show', ['id' => $item->id, 'slug' => $item->slug]) }}"
+                                                    href="#"
                                                     class="text-dark"
                                                 >Lihat Detail</a>
                                             </div>

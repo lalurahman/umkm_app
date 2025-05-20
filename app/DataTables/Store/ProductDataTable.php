@@ -4,6 +4,7 @@ namespace App\DataTables\Store;
 
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
+use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Column;
@@ -36,7 +37,16 @@ class ProductDataTable extends DataTable
                 </div>
             BLADE;
             })
-            ->rawColumns(['action'])
+            ->editColumn('image', function ($row) {
+                return '<img src="' . asset('product/' . $row->image) . '" class="img-fluid" width="100" height="100">';
+            })
+            ->editColumn('productCategory.name', function ($row) {
+                return $row->productCategory->name;
+            })
+            ->editColumn('price', function ($row) {
+                return 'Rp. ' . number_format($row->price, 0, ',', '.');
+            })
+            ->rawColumns(['action', 'image'])
             ->setRowId('id');
     }
 
@@ -45,7 +55,9 @@ class ProductDataTable extends DataTable
      */
     public function query(Product $model): QueryBuilder
     {
-        return $model->newQuery();
+        return $model->newQuery()
+            ->with(['productCategory'])
+            ->where('store_id', Auth::user()->store_id);
     }
 
     /**
@@ -70,6 +82,10 @@ class ProductDataTable extends DataTable
         return [
             Column::computed('No')->data('DT_RowIndex'),
             Column::make('name')->title('Nama Produk'),
+            Column::make('productCategory.name')->title('Kategori Produk'),
+            Column::make('price')->title('Harga'),
+            Column::make('stock')->title('Stok'),
+            Column::make('image')->title('Gambar'),
             Column::computed('action')
                 ->exportable(false)
                 ->printable(false)
