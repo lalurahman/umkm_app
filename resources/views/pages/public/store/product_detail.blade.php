@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <a
-                                    href="https://api.whatsapp.com/send?phone={{ $auth->phone }}&text=Hallo%20Saya%20ingin%20memesan%20produk%20{{ $product->name }}%20dari%20toko%20{{ $auth->store->name }}"
+                                    href="https://api.whatsapp.com/send?phone={{ $product->store->phone }}&text=Hallo%20Saya%20ingin%20memesan%20produk%20{{ $product->name }}%20dari%20toko%20{{ $product->store->name }}"
                                     target="_blank"
                                     class="product-add btn-primary bg-info"
                                 >
