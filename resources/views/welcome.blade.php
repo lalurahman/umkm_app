@@ -1,5 +1,6 @@
 @extends('layouts.public')
 
+@section('title', 'Offline Mode')
 @section('content')
     <section class="banner-part">
         <div class="container">
@@ -74,7 +75,7 @@
                             class="btn btn-outline"
                         >
                             <i class="fas fa-eye"></i>
-                            <span>lihat lainnya</span>
+                            <span>lihat usaha lainnya</span>
                         </a>
                     </div>
                 </div>
